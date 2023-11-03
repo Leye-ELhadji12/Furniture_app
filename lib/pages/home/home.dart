@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_apply/Model/Products.dart';
 import 'package:my_apply/pages/Product/Widgets/ListProducts.dart';
 import 'package:my_apply/pages/home/widgets/category.dart';
+import 'package:my_apply/pages/home/widgets/footer.dart';
 
 import '../Product/Widgets/Product.dart';
 
@@ -86,6 +87,9 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
+            const SizedBox(height: 10),
+            const FooterSection(), 
+            const SizedBox(height: 20),     
           ],          
         ),
       ),

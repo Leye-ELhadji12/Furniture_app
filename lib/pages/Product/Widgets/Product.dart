@@ -17,15 +17,15 @@ class Product extends StatelessWidget {
         children: [
           Container(
             height: 136,
-            decoration: BoxDecoration(
+            decoration: BoxDecoration(  
               borderRadius: BorderRadius.circular(22),
-              boxShadow: const [
+              /*boxShadow: const [
                 BoxShadow(
                   offset: Offset(0, 15),
                   color: Colors.grey, 
                   blurRadius: 27,    
                 )
-              ],      
+              ],  */    
             ),
             child: Container(
               margin: const EdgeInsets.only(right: 10), 
@@ -49,17 +49,76 @@ class Product extends StatelessWidget {
             ),
           ),
           Positioned(  
-            top: 0,
-            left: 0,
-            child: SizedBox(
-              height: 136,
+            top: -5,      
+            left: 25,           
+            child: SizedBox(     
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
                   
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 100.0,
+                      vertical: 20.0,    
+                    ), 
+                    child: Text(
+                      "Luxury Silver Ceiling Lamp",  
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,   
+                        fontSize: 15, 
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
-          ),                
+          ),  
+          Positioned(
+            child: SizedBox(  
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,  
+                children: const [
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 125.0,  
+                      vertical: 40.0
+                    ),
+                    child: Text(
+                      "Luxury Silver Ceiling Lamp Living Room Modern Crystal Ceiling Lights Bedroom Led Ceiling Lamps.",    
+                      style: TextStyle(   
+                        fontWeight: FontWeight.w500,        
+                        fontSize: 10,
+                        height: 1,        
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),   
+          Positioned(
+            bottom: 10,  
+            child: SizedBox(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 130.0, 
+                      vertical: 30.0
+                    ),
+                    child: Text(
+                      "\$${300.0} US",   
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,   
+                        fontSize: 15,   
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),           
         ],
       ),
     );
