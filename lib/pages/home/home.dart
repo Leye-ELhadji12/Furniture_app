@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_apply/Model/Products.dart';
+import 'package:my_apply/pages/Product/Detail/DetailsProduct.dart';
 import 'package:my_apply/pages/Product/Widgets/ListProducts.dart';
 import 'package:my_apply/pages/home/widgets/category.dart';
 import 'package:my_apply/pages/home/widgets/footer.dart';
@@ -37,7 +38,7 @@ class HomePage extends StatelessWidget {
           ],
         ),
         body: Column (
-          children: [
+          children: [  
             const CategorySection(),
             const SizedBox(height: 10),
             Stack(
@@ -84,13 +85,29 @@ class HomePage extends StatelessWidget {
                 itemBuilder: (context, index) => ListProducts(
                   product: products[index],
                   itemIndex: index,
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => DetailsProduct(
+                          product: products[index]
+                        ),
+                      ),
+                    );
+                  },
                 ),
               ),
-            ),
+            ), 
             const SizedBox(height: 10),
-            const FooterSection(), 
-            const SizedBox(height: 20),     
-          ],          
+            const Positioned(
+              left: 0,
+              right: 0,    
+              bottom: 0,
+              child: FooterSection(),   
+            ),
+            //const FooterSection(),   
+            const SizedBox(height: 20),          
+          ],            
         ),
       ),
     );

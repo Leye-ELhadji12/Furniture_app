@@ -18,9 +18,9 @@ class CategorySection extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 7), 
       margin: const EdgeInsets.symmetric(horizontal:10),
-      child: Column(   
+      child: const Column(   
         crossAxisAlignment: CrossAxisAlignment.start,   
-        children: const [
+        children: [
           Text(
             'Furniture in',
             style: TextStyle(
@@ -43,7 +43,7 @@ class CategorySection extends StatelessWidget {
             ),
           ),
           SizedBox(height: 40),
-          _Category(),  
+          _Category(),    
         ],  
       ),
       

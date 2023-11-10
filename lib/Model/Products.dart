@@ -20,7 +20,7 @@ List<Products> products = [
     id: 2, 
     price: "300.0 US",
     libelle: "Mid-Century Modern Sale at the Foundary Opens a new tab Finding the perfect piece for your home", 
-    title: "Mid-Century Modern Sale at the Foundary", 
+    title: "Mid-Century Modern Sale",  
     description: "Mid-Century Modern Sale at the Foundary Opens a new tab Finding the perfect piece for your home takes time, and money. An iconic piece can make just the right statement if only it was within reach!We at Apartment Therapy are thrilled that the Foundary is launching an event that hits on one of our favorite styles – Mid-Century Modern. Great design IS accessible, and the Foundary believes it should be a part of your everyday life, just like the early Modernists.", 
     image: 'assets/images/mid.jpg'
   ),
@@ -38,7 +38,7 @@ List<Products> products = [
     libelle: "Get The Look: Harrods Dining Hall Designed by David Collins Studio; Opens a new tab Inspiration",
     title: "HARRODS", 
     description: "Get The Look: Harrods Dining Hall Designed by David Collins Studio; Opens a new tab Inspiration and Ideas wants to show you this clean and luxurious restaurant design, inspired by David Collins Studio, an alternative modern design creation.", 
-    image: 'assets/images/harrods.jpg'
+    image: 'assets/images/lamp3.jpg'  
   ),
   Products(
     id: 5, 
